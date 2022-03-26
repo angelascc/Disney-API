@@ -5,7 +5,6 @@ class User < ApplicationRecord
   has_many :characters, dependent: :destroy
   has_many :movies, dependent: :destroy
   has_many :genres, dependent: :destroy
-  has_many :character_movies, dependent: :destroy
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
