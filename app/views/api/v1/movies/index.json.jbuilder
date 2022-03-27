@@ -1,3 +1,3 @@
 json.array! @movies do |movie|
-  json.extract! movie, :image, :title, :date_created
+  json.extract! movie, :id, :image, :title, :date_created
 end
